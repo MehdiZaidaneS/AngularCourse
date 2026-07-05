@@ -7,7 +7,12 @@
     Press Me
   </button>
 
-  <p *ngIf="active">
-    Hello, you clicked the button
-  </p>
+  <div *ngIf="active">
+    <p>{{ message }}</p>
+
+    <input
+      id="message"
+      [(ngModel)]="message"
+      placeholder="message" />
+  </div>
 </div>
