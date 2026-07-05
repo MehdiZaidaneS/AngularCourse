@@ -1,5 +1,13 @@
 <div>
-  <button (click)="onButtonClick()" [style.backgroundColor]="color">
+  <h1>Property and Event Binding</h1>
+
+  <button
+    (click)="onButtonClick()"
+    [style.backgroundColor]="active ? 'green' : 'red'">
     Press Me
   </button>
+
+  <p *ngIf="active">
+    Hello, you clicked the button
+  </p>
 </div>

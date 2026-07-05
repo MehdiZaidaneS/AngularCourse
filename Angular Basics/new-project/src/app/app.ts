@@ -1,17 +1,16 @@
 import { Component } from '@angular/core';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [NgIf],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  color = 'green';
-  active = true;
+  active = false;
 
   onButtonClick() {
     this.active = !this.active;
-    this.color = this.active ? 'green' : 'red';
   }
 }
