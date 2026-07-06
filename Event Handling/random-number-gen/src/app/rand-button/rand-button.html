@@ -1,4 +1,9 @@
 <div>
-    <button (click)="handleOnClick()">Generate!</button>
+    <form (ngSubmit)="handleOnClick(numberInput.value)">
+        <input #numberInput type="number" placeholder="Enter a number to sum">
+        <button type="submit">Generate!</button>
+    </form>
+
     <p *ngIf="value">Random Number is: {{number}}</p>
+    <p *ngIf="value">The sum is: {{sum}}</p>
 </div>
