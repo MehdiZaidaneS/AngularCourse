@@ -1,0 +1,8 @@
+<div>
+    <h1>Reversed Pipe</h1>
+    <form (ngSubmit)="handleOnClick(textInput.value)">
+        <input #textInput type="text"  placeholder="Enter text to reverse">
+        <button type="submit">Submit</button>
+    </form>
+    <p>Reversed text: {{inputValue | reversepipe}}</p>
+</div>

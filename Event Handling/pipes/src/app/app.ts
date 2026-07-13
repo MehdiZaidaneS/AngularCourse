@@ -1,12 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { Pipe1 } from './pipe1/pipe1';
 import { Jsonpipe } from './jsonpipe/jsonpipe';
+import { CustomPipe } from './custom-pipe/custom-pipe';
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [Pipe1, Jsonpipe],
+  imports: [Pipe1, Jsonpipe, CustomPipe],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
