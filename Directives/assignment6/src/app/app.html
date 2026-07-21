@@ -1,0 +1,19 @@
+<div>
+  <button appButtonColor (click)="toggleValue('default')">
+    Default
+  </button>
+
+  <button appButtonColor (click)="toggleValue('case1')">
+    Name
+  </button>
+
+  <button appButtonColor (click)="toggleValue('case2')">
+    Last
+  </button>
+</div>
+
+<div [ngSwitch]="value">
+  <div *ngSwitchCase="'case1'">This is my name</div>
+  <div *ngSwitchCase="'case2'">This is my last name</div>
+  <div *ngSwitchDefault>Default</div>
+</div>
