@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  background: #1976d2;
+  padding: 12px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  background: #125699;
+}
+
+div {
+  margin-top: 20px;
+}
+
+.nav{
+    text-align: center;
+}

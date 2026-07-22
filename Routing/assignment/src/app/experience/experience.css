@@ -1,0 +1,11 @@
+.card {
+  width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff7e6;
+  border-radius: 10px;
+}
+
+h3 {
+  margin-top: 20px;
+}
